@@ -4,12 +4,11 @@
 Este é um projeto para o curso da escola Vai na Web
 
 
-
 ## Stack utilizada
 
-**Front-end:** HTML, SCSS
+**Front-end:** HTML, SCSS, JavaScript
 
-**Back-end:** javaScript
+**Back-end:** 
 
 
 ## Deploy
