@@ -1,33 +1,63 @@
-@charset "UTF-8";
-/* 
-  Seletor no SCSS:
-  - É usado para "apontar" quais elementos HTML receberão os estilos.
-  - Funciona igual ao CSS, mas no SCSS é possível ANINHAR seletores, deixando o código mais organizado.
-  - Também dá para usar o "&" para se referir ao seletor pai em modificações
-    como pseudo-classes (:hover) ou variações de classe.
-  - No final, todos os seletores SCSS são compilados para CSS puro.
-*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: cadetblue;
-}
-
-img {
-  width: 150px;
-}
-
-.titulo {
+header {
+  background-color: #F3A1A7;
   text-align: center;
-  font-size: 2rem;
-  margin: 20px 0;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+header nav a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 20px;
 }
 
-#btn1 {
-  background-color: darkslateblue;
-  font: white;
+main {
+  background-color: #f8f9fa;
+}
+
+h1 {
+  color: #f8f9fa;
+  font-size: 3rem;
+}
+
+#filmes {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: center;
+  padding: 50px 130px;
+}
+
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.card img {
+  height: 960px;
+  width: 1440px;
+}
+.card h2 {
+  font-weight: 400;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #5f0f40;
+  color: #f8f9fa;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

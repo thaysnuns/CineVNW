@@ -1,38 +1,86 @@
-// seletor{propriedade:valor
-/* 
-  Seletor no SCSS:
-  - É usado para "apontar" quais elementos HTML receberão os estilos.
-  - Funciona igual ao CSS, mas no SCSS é possível ANINHAR seletores, deixando o código mais organizado.
-  - Também dá para usar o "&" para se referir ao seletor pai em modificações
-    como pseudo-classes (:hover) ou variações de classe.
-  - No final, todos os seletores SCSS são compilados para CSS puro.
-*/
+// cores: FFE198, BD8A72, F3A1A7, E97A80,
 
-// * é um seletor global, ele seleciona todos os elementos da página de uma vez. Geralmente é usado para aplicar um estilo “global” ou resetar padrões de navegadores.
-*{
+* {
     margin: 0;
-    // espaçamento externo das tags
     padding: 0;
-    // espaçamento interno das tags
     box-sizing: border-box;
-    // inclui o padding e a borda na largura e altura total do elemento
 }
-body{
-    background-color: cadetblue;
-}
-// Seletor de tag
-img{
-    width: 150px;
+
+// body {
+
+// }
+
+header {
+    background-color: #F3A1A7;
+    text-align: center;
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav a {
+        color: #ffff;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        padding: 20px;
+    }
 
 }
-//class = seletor
-.titulo{
-    text-align: center;
-    font-size: 2rem;
-    margin: 20px 0;
+
+
+main {
+    background-color: #f8f9fa;
 }
-// id = seletor
-#btn1{
-    background-color: darkslateblue;
-    font: white;
+
+h1 {
+    color: #f8f9fa;
+    font-size: 3rem;
+    // font-size - tamanho da fonte
+}
+
+#filmes {
+    // display-> block, inline e inline-block
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    padding: 50px 130px;
+}
+
+
+.card {
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+
+    img {
+        height: 960px;
+        width: 1440px;
+    }
+
+    h2 {
+        font-weight: 400;
+        padding: 10px;
+    }
+}
+
+// medida relativa
+// vw - viewport (janela de exibição)
+// vw - largura da tela 
+// porcentagem % - relativo ao elemento pai
+// identificador unico/ n podemos repetir
+
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #5f0f40;
+    color: #f8f9fa;
+    border-radius: 10px;
 }
