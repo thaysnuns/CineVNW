@@ -13,12 +13,24 @@
     <header>
         <!-- ul é container da lista nao ordenada -->
         <nav>
-            <h1 class="titulo" id="titulo">Cine Princess</h1>
-            <ul>
-                <!-- ul é a tag container/tag pai -->
-                <!-- li - item da lista -->
-                <li><a href="#titulo">Inicio</a></li>
-                <li><a href="#filmes">Filmes</a></li>
+            <div class="titulo" id="titulo">
+                <img src="/image/CinePrincess.png" alt="">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#titulo">Início</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Eras ▼</a>
+                    <div class="eras-content">
+                        <a href="#princesas-classicas">Princesas Clássicas</a>
+                        <a href="#era-de-ouro">Era de Ouro</a>
+                        <a href="#nova-geracao">Nova Geração</a>
+                        <a href="#modernas">Modernas</a>
+                    </div>
+                </li>
+                <li><a href="#filmes">Contato</a></li>
+
             </ul>
         </nav>
     </header>
@@ -27,96 +39,131 @@
         <!-- main é o conteúdo principal da página -->
         <!-- section divide seções -->
         <!-- card -->
+
         <!-- 🌹 PRINCESAS CLÁSSICAS -->
-        <section class="princesas-classicas" id="filmes">
-            <h1>👸 Princesas Clássicas</h1>
-            <div class="card">
-                <img src="/image/brancadeneve.jpg" alt="Branca de Neve">
-                <h2>Branca de Neve e os Sete Anões</h2>
-                <button id="btn1">Compre seu ingresso</button>
-            </div>
+        <section class="filmes-section">
+            <h2>👸 Princesas Clássicas</h2>
+            <section class="filmes" id="princesas-classicas">
+                <div class="card">
+                    <img src="/image/brancadeneve.jpg" alt="Branca de Neve">
+                    <h3>Branca de Neve e os Sete Anões</h3>
+                    <button id="btn1">Compre seu ingresso</button>
+                </div>
 
-            <div class="card">
-                <img src="/image/cinderela.jpg" alt="Cinderela">
-                <h2>Cinderela</h2>
-                <button id="btn2">Compre seu ingresso</button>
-            </div>
+                <div class="card">
+                    <img src="/image/cinderela.jpg" alt="Cinderela">
+                    <h3>Cinderela</h3>
+                    <button id="btn2">Compre seu ingresso</button>
+                </div>
 
-            <div class="card">
-                <img src="/image/belaadormecida.jpg">
-                <h2>A Bela Adormecida</h2>
-                <button id="btn3">Compre seu ingresso</button>
-            </div>
+                <div class="card">
+                    <img src="/image/belaadormecida.jpg">
+                    <h3>A Bela Adormecida</h3>
+                    <button id="btn3">Compre seu ingresso</button>
+                </div>
+            </section>
+
+            <!-- 🌊 ERA DE OURO -->
+            <h2>🌊 Era de Ouro</h2>
+
+            <section class="filmes" id="era-de-ouro">
+                <div class="card">
+                    <img src="/image/pequenasereia.jpg" alt="A Pequena Sereia">
+                    <h3>A Pequena Sereia</h3>
+                    <button id="btn4">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/belafera.jpg" alt="A Bela e a Fera">
+                    <h3>A Bela e a Fera</h3>
+                    <button id="btn5">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/aladin.jpg" alt="Aladdin">
+                    <h3>Aladdin</h3>
+                    <button id="btn6">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/pocahontas.jpg" alt="Pocahontas">
+                    <h3>Pocahontas</h3>
+                    <button id="btn7">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/mulan.jpg" alt="Mulan">
+                    <h3>Mulan</h3>
+                    <button id="btn8">Compre seu ingresso</button>
+                </div>
+            </section>
+
+            <!-- 💎 NOVA GERAÇÃO -->
+            <h2>💎 Nova Geração</h2>
+            <section class="filmes" id="nova-geracao">
+                <div class="card">
+                    <img src="/image/princesasapo.jpg" alt="A Princesa e o Sapo">
+                    <h3>A Princesa e o Sapo</h3>
+                    <button id="btn9">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/enrolados.jpg" alt="Enrolados">
+                    <h3>Enrolados</h3>
+                    <button id="btn10">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/valente.jpg" alt="Valente">
+                    <h3>Valente</h3>
+                    <button id="btn11">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/frozen.jpg" alt="Frozen">
+                    <h3>Frozen</h3>
+                    <button id="btn12">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/moana.jpg" alt="Moana">
+                    <h3>Moana</h3>
+                    <button id="btn13">Compre seu ingresso</button>
+                </div>
+            </section>
+
+            <!-- 🌠 Modernas -->
+            <h2>🌠 Modernas</h2>
+            <section class="filmes" id="modernas">
+                <div class="card">
+                    <img src="/image/raya.jpg" alt="Raya e o Último Dragão">
+                    <h3>Raya e o Último Dragão</h3>
+                    <button id="btn14">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/encanto.jpg" alt="Encanto">
+                    <h3>Encanto</h3>
+                    <button id="btn15">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/wish.jpg" alt="Wish: O Poder dos Desejos">
+                    <h3>Wish: O Poder dos Desejos</h3>
+                    <button id="btn16">Compre seu ingresso</button>
+                </div>
+
+                <div class="card">
+                    <img src="/image/detonaralph.jpg" alt="Detona Ralph">
+                    <h3>Detona Ralph</h3>
+                    <button id="btn17">Compre seu ingresso</button>
+                </div>
+            </section>
         </section>
 
-        <!-- 🌊 ERA DE OURO -->
-        <section class="era-de-ouro" id="filmes">
-            <h1>🌊 Era de Ouro</h1>
-            <div class="card">
-                <img src="/image/pequenasereia.jpg" alt="A Pequena Sereia">
-                <h2>A Pequena Sereia</h2>
-                <button id="btn4">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/belafera.jpg" alt="A Bela e a Fera">
-                <h2>A Bela e a Fera</h2>
-                <button id="btn5">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/aladin.jpg" alt="Aladdin">
-                <h2>Aladdin</h2>
-                <button id="btn6">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/pocahontas.jpg" alt="Pocahontas">
-                <h2>Pocahontas</h2>
-                <button id="btn7">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/mulan.jpg" alt="Mulan">
-                <h2>Mulan</h2>
-                <button id="btn8">Compre seu ingresso</button>
-            </div>
-        </section>
-
-        <!-- 💎 NOVA GERAÇÃO -->
-        <section class="nova-geracao" id="filmes">
-            <h1>💎 Nova Geração</h1>
-            <div class="card">
-                <img src="/image/princesasapo.jpg" alt="A Princesa e o Sapo">
-                <h2>A Princesa e o Sapo</h2>
-                <button id="btn9">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/enrolados.jpg" alt="Enrolados">
-                <h2>Enrolados</h2>
-                <button id="btn10">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/valente.jpg" alt="Valente">
-                <h2>Valente</h2>
-                <button id="btn11">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/frozen.jpg" alt="Frozen">
-                <h2>Frozen</h2>
-                <button id="btn12">Compre seu ingresso</button>
-            </div>
-
-            <div class="card">
-                <img src="/image/moana.jpg" alt="Moana">
-                <h2>Moana</h2>
-                <button id="btn13">Compre seu ingresso</button>
-            </div>
-        </section>
-
+        <footer>
+            <p>Feito com 💖 por Thayná Nunes | Todos os direitos reservados à Disney</p>
+        </footer>
         <!-- Usamos a div para dividir/ não tem um valor semantico -->
     </main>
 </body>
