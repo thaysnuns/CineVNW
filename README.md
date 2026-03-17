@@ -1,26 +1,42 @@
+# 👩‍💻 +1 Desafio!
+Este projeto é referente ao módulo 1 (Fundamentos da Programação Front-end) do curso de Desenvolvimento WEB do Vai Na Web com L'oreal Groupe
 
-# Cine Vai na Web
+---
 
-Este é um projeto para o curso da escola Vai na Web
+## 🧠 O Desafio
+O CineWNV é um projeto feito com gostos pessoais  de como seria nosso cinema **ideal**, busquei trazer filmes clássicos da infância para retratar e relembrar de uma epóca tão querida
 
+A missão foi desenvolver uma página web funcional, responsiva e divertida para todos os públicos. 
 
-## Stack utilizada
+---
 
-**Front-end:** HTML, SCSS, JavaScript
+## 🧰 Requisitos Técnicos
+* Desenvolvido com HTML5 e SASS (SCSS).
 
-**Back-end:** 
+* Layout responsivo.
 
+* Hospedado na Vercel.
 
-## Deploy
+---
 
-Para fazer o deploy desse projeto rode
+## 🎨 Design  
 
+O layout foi desenvolvido com liberdade criativa para ajustes e aprimoramentos no estilo visual.
+
+---
+
+## ✏️ Deploy 
 ```bash
   https://cine-vnw.vercel.app/
 ```
+---
 
+## 🖼️ Prévia
 
-## Autores
+  >Em processo...
 
-- [@Thayná Nunes](https://github.com/thaysnuns)
+---
 
+## 🫂 Autores
+
+[@Thayná Nunes](https://github.com/thaysnuns)
