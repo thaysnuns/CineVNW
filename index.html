@@ -1,171 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CinePrincess</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/image/icon.png" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- ul é container da lista nao ordenada -->
-        <nav>
-            <div class="titulo" id="titulo">
-                <img src="/image/CinePrincess.png" alt="">
+      <!-- ul é container da lista nao ordenada -->
+      <nav>
+        <div class="titulo" id="titulo">
+          <!-- <img src="/image/CinePrincess.png" alt=""> -->
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#titulo">Início</a></li>
+
+          <li class="dropdown">
+            <a href="#">Eras ▼</a>
+            <div class="eras-content">
+              <a href="#princesas-classicas">Princesas Clássicas</a>
+              <a href="#era-de-ouro">Era de Ouro</a>
+              <a href="#nova-geracao">Nova Geração</a>
+              <a href="#modernas">Modernas</a>
             </div>
-
-            <ul class="nav-links">
-                <li><a href="#titulo">Início</a></li>
-
-                <li class="dropdown">
-                    <a href="#">Eras ▼</a>
-                    <div class="eras-content">
-                        <a href="#princesas-classicas">Princesas Clássicas</a>
-                        <a href="#era-de-ouro">Era de Ouro</a>
-                        <a href="#nova-geracao">Nova Geração</a>
-                        <a href="#modernas">Modernas</a>
-                    </div>
-                </li>
-                <li><a href="#filmes">Contato</a></li>
-
-            </ul>
-        </nav>
+          </li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
+      <!-- main é o conteúdo principal da página -->
+      <!-- section divide seções -->
+      <!-- card -->
 
-        <!-- main é o conteúdo principal da página -->
-        <!-- section divide seções -->
-        <!-- card -->
+      <!-- 🌹 PRINCESAS CLÁSSICAS -->
+      <section class="filmes-section">
+        <h2>👸 Princesas Clássicas</h2>
+        <section class="filmes" id="section2">
+          <a href="#section1" class="arrow__btn">‹</a>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/brancadeneve.jpg" alt="Branca de Neve" />
+                <h3>Branca de Neve e os Sete Anões</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Branca de Neve, uma princesa de coração puro, é invejada pela
+                  Rainha Má por sua beleza. Forçada a fugir, encontra abrigo com
+                  sete anões gentis, mas a madrasta fará de tudo para
+                  destruí-la.
+                </p>
+                <button id="btn1">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
 
-        <!-- 🌹 PRINCESAS CLÁSSICAS -->
-        <section class="filmes-section">
-            <h2>👸 Princesas Clássicas</h2>
-            <section class="filmes" id="princesas-classicas">
-                <div class="card">
-                    <img src="/image/brancadeneve.jpg" alt="Branca de Neve">
-                    <h3>Branca de Neve e os Sete Anões</h3>
-                    <button id="btn1">Compre seu ingresso</button>
-                </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/cinderela.jpg" alt="Cinderela" />
+                <h3>Cinderela</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Cinderela vive sob o domínio cruel de sua madrasta e das
+                  meias-irmãs. Com a ajuda de sua fada madrinha, ela vai ao
+                  baile do príncipe, mas precisa sair antes da meia-noite,
+                  deixando para trás um sapatinho de cristal.
+                </p>
+                <button id="btn2">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
 
-                <div class="card">
-                    <img src="/image/cinderela.jpg" alt="Cinderela">
-                    <h3>Cinderela</h3>
-                    <button id="btn2">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/belaadormecida.jpg">
-                    <h3>A Bela Adormecida</h3>
-                    <button id="btn3">Compre seu ingresso</button>
-                </div>
-            </section>
-
-            <!-- 🌊 ERA DE OURO -->
-            <h2>🌊 Era de Ouro</h2>
-
-            <section class="filmes" id="era-de-ouro">
-                <div class="card">
-                    <img src="/image/pequenasereia.jpg" alt="A Pequena Sereia">
-                    <h3>A Pequena Sereia</h3>
-                    <button id="btn4">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/belafera.jpg" alt="A Bela e a Fera">
-                    <h3>A Bela e a Fera</h3>
-                    <button id="btn5">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/aladin.jpg" alt="Aladdin">
-                    <h3>Aladdin</h3>
-                    <button id="btn6">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/pocahontas.jpg" alt="Pocahontas">
-                    <h3>Pocahontas</h3>
-                    <button id="btn7">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/mulan.jpg" alt="Mulan">
-                    <h3>Mulan</h3>
-                    <button id="btn8">Compre seu ingresso</button>
-                </div>
-            </section>
-
-            <!-- 💎 NOVA GERAÇÃO -->
-            <h2>💎 Nova Geração</h2>
-            <section class="filmes" id="nova-geracao">
-                <div class="card">
-                    <img src="/image/princesasapo.jpg" alt="A Princesa e o Sapo">
-                    <h3>A Princesa e o Sapo</h3>
-                    <button id="btn9">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/enrolados.jpg" alt="Enrolados">
-                    <h3>Enrolados</h3>
-                    <button id="btn10">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/valente.jpg" alt="Valente">
-                    <h3>Valente</h3>
-                    <button id="btn11">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/frozen.jpg" alt="Frozen">
-                    <h3>Frozen</h3>
-                    <button id="btn12">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/moana.jpg" alt="Moana">
-                    <h3>Moana</h3>
-                    <button id="btn13">Compre seu ingresso</button>
-                </div>
-            </section>
-
-            <!-- 🌠 Modernas -->
-            <h2>🌠 Modernas</h2>
-            <section class="filmes" id="modernas">
-                <div class="card">
-                    <img src="/image/raya.jpg" alt="Raya e o Último Dragão">
-                    <h3>Raya e o Último Dragão</h3>
-                    <button id="btn14">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/encanto.jpg" alt="Encanto">
-                    <h3>Encanto</h3>
-                    <button id="btn15">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/wish.jpg" alt="Wish: O Poder dos Desejos">
-                    <h3>Wish: O Poder dos Desejos</h3>
-                    <button id="btn16">Compre seu ingresso</button>
-                </div>
-
-                <div class="card">
-                    <img src="/image/detonaralph.jpg" alt="Detona Ralph">
-                    <h3>Detona Ralph</h3>
-                    <button id="btn17">Compre seu ingresso</button>
-                </div>
-            </section>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/belaadormecida.jpg" />
+                <h3>A Bela Adormecida</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  A princesa Aurora é amaldiçoada pela fada Malévola a cair em
+                  sono profundo ao completar 16 anos. Somente o beijo do
+                  verdadeiro amor poderá despertá-la.
+                </p>
+                <button id="btn3">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <a href="#section1" class="arrow__btn">›</a>
         </section>
 
-        <footer>
-            <p>Feito com 💖 por Thayná Nunes | Todos os direitos reservados à Disney</p>
-        </footer>
-        <!-- Usamos a div para dividir/ não tem um valor semantico -->
-    </main>
-</body>
+        <!-- 🌊 ERA DE OURO -->
+        <h2>🌊 Era de Ouro</h2>
 
+        <section class="filmes" id="era-de-ouro">
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/pequenasereia.jpg" alt="A Pequena Sereia" />
+                <h3>A Pequena Sereia</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Ariel, uma sereia curiosa, sonha em viver no mundo dos
+                  humanos. Ela faz um perigoso acordo com a bruxa do mar,
+                  Úrsula, para trocar sua voz por pernas e viver seu grande
+                  amor, o príncipe Eric.
+                </p>
+                <button id="btn4">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/belafera.jpg" alt="A Bela e a Fera" />
+                <h3>A Bela e a Fera</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Bela, uma jovem inteligente e sonhadora, acaba presa no
+                  castelo de uma Fera misteriosa. Com o tempo, ela descobre que
+                  por trás da aparência assustadora existe um coração bondoso.
+                </p>
+                <button id="btn5">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/aladin.jpg" alt="Aladdin" />
+                <h3>Aladdin</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Aladdin, um jovem de rua, encontra uma lâmpada mágica com um
+                  gênio que concede desejos. Disfarçado de príncipe, ele tenta
+                  conquistar a princesa Jasmine, mas precisa enfrentar o malvado
+                  Jafar.
+                </p>
+                <button id="btn6">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/pocahontas.jpg" alt="Pocahontas" />
+                <h3>Pocahontas</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Pocahontas, uma nativa americana livre e corajosa, conhece o
+                  explorador inglês John Smith. Mesmo com as diferenças
+                  culturais, os dois lutam pela paz entre seus povos.
+                </p>
+                <button id="btn7">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/mulan.jpg" alt="Mulan" />
+                <h3>Mulan</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Para proteger seu pai, Mulan se disfarça de homem e se junta
+                  ao exército chinês. Com coragem e inteligência, ela desafia as
+                  tradições e prova que o verdadeiro valor vem de dentro.
+                </p>
+                <button id="btn8">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 💎 NOVA GERAÇÃO -->
+        <h2>💎 Nova Geração</h2>
+        <section class="filmes" id="nova-geracao">
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/princesasapo.jpg" alt="A Princesa e o Sapo" />
+                <h3>A Princesa e o Sapo</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Tiana é uma jovem determinada que sonha em abrir seu próprio
+                  restaurante. Mas quando beija um príncipe transformado em
+                  sapo, ela também se transforma, e os dois embarcam numa
+                  jornada mágica.
+                </p>
+                <button id="btn9">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/enrolados.jpg" alt="Enrolados" />
+                <h3>Enrolados</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Rapunzel vive trancada em uma torre desde bebê, com seus
+                  longos cabelos mágicos. Quando conhece Flynn Rider, um ladrão
+                  charmoso, ela decide sair para descobrir o mundo — e a verdade
+                  sobre sua origem.
+                </p>
+                <button id="btn10">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/valente.jpg" alt="Valente" />
+                <h3>Valente</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Merida, uma princesa escocesa rebelde, desafia as tradições e
+                  acaba lançando um feitiço que coloca sua família em perigo.
+                  Ela precisa usar coragem e sabedoria para consertar seus
+                  erros.
+                </p>
+                <button id="btn11">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/frozen.jpg" alt="Frozen" />
+                <h3>Frozen</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Em Arendelle, Elsa nasce com o poder de controlar o gelo e a
+                  neve, mas teme machucar quem ama — especialmente sua irmã,
+                  Anna. Quando seus poderes saem do controle e o reino é
+                  congelado, Anna embarca em uma jornada com novos amigos para
+                  trazer o verão de volta e reconquistar o amor da irmã.
+                </p>
+                <button id="btn12">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/moana.jpg" alt="Moana" />
+                <h3>Moana</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Moana, filha do chefe de uma ilha polinésia, parte em uma
+                  jornada pelo oceano para restaurar o coração da deusa Te Fiti
+                  e salvar seu povo, contando com a ajuda do semideus Maui.
+                </p>
+                <button id="btn13">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 🌠 Modernas -->
+        <h2>🌠 Modernas</h2>
+        <section class="filmes" id="modernas">
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/raya.jpg" alt="Raya e o Último Dragão" />
+                <h3>Raya e o Último Dragão</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Em um mundo dividido chamado Kumandra, a guerreira Raya busca
+                  o último dragão, Sisu, para restaurar a harmonia e reunir seu
+                  povo após uma antiga ameaça voltar a surgir. Com coragem e fé
+                  na confiança, ela aprende que a verdadeira força está em unir
+                  os corações.
+                </p>
+                <button id="btn14">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/encanto.jpg" alt="Encanto" />
+                <h3>Encanto</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Mirabel faz parte da mágica família Madrigal, onde todos têm
+                  dons especiais — menos ela. Quando a magia do “encanto” começa
+                  a desaparecer, Mirabel descobre que talvez ela seja a única
+                  capaz de salvar sua família e sua casa.
+                </p>
+                <button id="btn15">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/wish.jpg" alt="Wish: O Poder dos Desejos" />
+                <h3>Wish: O Poder dos Desejos</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Asha, uma jovem sonhadora do reino de Rosas, faz um desejo tão
+                  poderoso que é atendido por uma estrela mágica. Juntas, elas
+                  enfrentam o rei Magnífico para provar que o poder de realizar
+                  sonhos vive dentro de cada um de nós.
+                </p>
+                <button id="btn16">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="inner-card">
+              <div class="card" id="flipfront">
+                <img src="/image/detonaralph.jpg" alt="Detona Ralph" />
+                <h3>Detona Ralph</h3>
+              </div>
+              <div class="card" id="flipback">
+                <h3>Sinopse</h3>
+                <p>
+                  Vanellope é uma piloto destemida do jogo “Corrida Doce” que
+                  sonha em ser aceita como verdadeira competidora. Ao lado de
+                  seu amigo Ralph, ela mostra que ser diferente é o que a torna
+                  especial.
+                </p>
+                <button id="btn17">Compre seu ingresso</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer id="footer">
+        <p>
+          Feito com 💖 por Thayná Nunes | Todos os direitos reservados à Disney
+        </p>
+      </footer>
+      <!-- Usamos a div para dividir/ não tem um valor semantico -->
+    </main>
+  </body>
 </html>
